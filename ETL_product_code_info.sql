@@ -11,6 +11,10 @@ select * from pg_tables where tablename like 'product_code_info%';
 ---------------------------
 --Verify
 ---------------------------
+--1) 건수체크
+select count(*) from public.product_code_info
+
+
 --1) 모델명이 지수값으로 들어간 경우
 select count(*) from public.product_code_info5 where mdl_code like '%E+12%';
 
